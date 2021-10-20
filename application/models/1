@@ -1,0 +1,38 @@
+[10300] Log opened at 2021-10-14 13:52:19
+[10300] I: Connecting to configured address/port: 127.0.0.1:9000.
+[10300] I: Connected to client. :-)
+[10300] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" language="PHP" xdebug:language_version="7.1.33" protocol_version="1.0" appid="10300" idekey="13108"><engine version="2.9.4"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[10300] <- feature_set -i 1 -n show_hidden -v 1
+[10300] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[10300] <- feature_set -i 2 -n max_depth -v 1
+[10300] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[10300] <- feature_set -i 3 -n max_children -v 100
+[10300] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[10300] <- feature_set -i 4 -n extended_properties -v 1
+[10300] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[10300] <- feature_set -i 5 -n resolved_breakpoints -v 1
+[10300] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="resolved_breakpoints" success="1"></response>
+
+[10300] <- status -i 6
+[10300] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="6" status="starting" reason="ok"></response>
+
+[10300] <- step_into -i 7
+[10300] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="7" status="break" reason="ok"><xdebug:message filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></xdebug:message></response>
+
+[10300] <- breakpoint_set -i 8 -t line -f file://C:/OpenServer/domains/fregat_project/application/models/Registry_model.php -n 43
+[10300] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="8" id="103000001" resolved="resolved"></response>
+
+[10300] <- stack_get -i 9
+[10300] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="9"><stack where="{main}" level="0" type="file" filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></stack></response>
+
+[10300] <- run -i 10
+[10300] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="10" status="stopping" reason="ok"></response>
+
+[10300] <- run -i 11
+[10300] Log closed at 2021-10-14 13:52:19
+

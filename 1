@@ -1,0 +1,533 @@
+[11008] Log opened at 2021-10-16 19:09:32
+[11008] I: Connecting to configured address/port: localhost:9000.
+[11008] I: Connected to client. :-)
+[11008] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" language="PHP" xdebug:language_version="7.1.33" protocol_version="1.0" appid="11008" idekey="coldy"><engine version="2.9.4"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[11008] <- feature_set -i 1 -n show_hidden -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[11008] <- feature_set -i 2 -n max_depth -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[11008] <- feature_set -i 3 -n max_children -v 100
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[11008] <- feature_set -i 4 -n extended_properties -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[11008] <- feature_set -i 5 -n notify_ok -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[11008] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[11008] <- stdout -i 7 -c 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[11008] <- status -i 8
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[11008] <- step_into -i 9
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></xdebug:message></response>
+
+[11008] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[11008] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[11008] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="17" encoding="base64"><![CDATA[UGhwU3Rvcm0gMjAyMS4yLjI=]]></property></response>
+
+[11008] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="5" encoding="base64"><![CDATA[NjMzNDI=]]></property></response>
+
+[11008] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="85" encoding="base64"><![CDATA[L2ZyZWdhdF9wcm9qZWN0L2FwcGxpY2F0aW9uL21vZGVscy9SZWdpc3RyeV9tb2RlbC5waHA/X2lqdD1hYTU4b3NrMGVjN2k3NTRlcmdqNm10N2Zndg==]]></property></response>
+
+[11008] <- run -i 15
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Q29udGVudC10eXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTg=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Tm8gZGlyZWN0IHNjcmlwdCBhY2Nlc3MgYWxsb3dlZA==]]></stream>
+
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="15" status="stopping" reason="ok"></response>
+
+[11008] <- stop -i 16
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="16" status="stopped" reason="ok"></response>
+
+[11008] Log closed at 2021-10-16 19:09:37
+
+[11008] Log opened at 2021-10-16 19:10:30
+[11008] I: Connecting to configured address/port: localhost:9000.
+[11008] I: Connected to client. :-)
+[11008] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" language="PHP" xdebug:language_version="7.1.33" protocol_version="1.0" appid="11008" idekey="coldy"><engine version="2.9.4"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[11008] <- feature_set -i 1 -n show_hidden -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[11008] <- feature_set -i 2 -n max_depth -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[11008] <- feature_set -i 3 -n max_children -v 100
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[11008] <- feature_set -i 4 -n extended_properties -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[11008] <- feature_set -i 5 -n notify_ok -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[11008] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[11008] <- stdout -i 7 -c 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[11008] <- status -i 8
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[11008] <- step_into -i 9
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></xdebug:message></response>
+
+[11008] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[11008] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[11008] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="17" encoding="base64"><![CDATA[UGhwU3Rvcm0gMjAyMS4yLjI=]]></property></response>
+
+[11008] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="5" encoding="base64"><![CDATA[NjMzNDI=]]></property></response>
+
+[11008] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="85" encoding="base64"><![CDATA[L2ZyZWdhdF9wcm9qZWN0L2FwcGxpY2F0aW9uL21vZGVscy9SZWdpc3RyeV9tb2RlbC5waHA/X2lqdD0yZmVjZ21ncDNoOHVldGF2MDd1dWgwZHB1aw==]]></property></response>
+
+[11008] <- breakpoint_set -i 15 -t line -f file://C:/OpenServer/domains/fregat_project/application/controllers/Registry.php -n 130
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="110080001" resolved="unresolved"></response>
+
+[11008] <- breakpoint_set -i 16 -t line -f file://C:/OpenServer/domains/fregat_project/application/controllers/Registry.php -n 131
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="16" id="110080002" resolved="unresolved"></response>
+
+[11008] <- stack_get -i 17
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="17"><stack where="{main}" level="0" type="file" filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></stack></response>
+
+[11008] <- run -i 18
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Q29udGVudC10eXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTg=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Tm8gZGlyZWN0IHNjcmlwdCBhY2Nlc3MgYWxsb3dlZA==]]></stream>
+
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="18" status="stopping" reason="ok"></response>
+
+[11008] <- run -i 19
+[11008] Log closed at 2021-10-16 19:10:34
+
+[11008] Log opened at 2021-10-16 19:11:25
+[11008] I: Connecting to configured address/port: localhost:9000.
+[11008] I: Connected to client. :-)
+[11008] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" language="PHP" xdebug:language_version="7.1.33" protocol_version="1.0" appid="11008" idekey="coldy"><engine version="2.9.4"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[11008] <- feature_set -i 1 -n show_hidden -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[11008] <- feature_set -i 2 -n max_depth -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[11008] <- feature_set -i 3 -n max_children -v 100
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[11008] <- feature_set -i 4 -n extended_properties -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[11008] <- feature_set -i 5 -n notify_ok -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[11008] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[11008] <- stdout -i 7 -c 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[11008] <- status -i 8
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[11008] <- step_into -i 9
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></xdebug:message></response>
+
+[11008] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[11008] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[11008] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="17" encoding="base64"><![CDATA[UGhwU3Rvcm0gMjAyMS4yLjI=]]></property></response>
+
+[11008] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="5" encoding="base64"><![CDATA[NjMzNDI=]]></property></response>
+
+[11008] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="53" encoding="base64"><![CDATA[L2ZyZWdhdF9wcm9qZWN0L2FwcGxpY2F0aW9uL21vZGVscy9SZWdpc3RyeV9tb2RlbC5waHA=]]></property></response>
+
+[11008] <- breakpoint_set -i 15 -t line -f file://C:/OpenServer/domains/fregat_project/application/controllers/Registry.php -n 130
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="110080003" resolved="unresolved"></response>
+
+[11008] <- breakpoint_set -i 16 -t line -f file://C:/OpenServer/domains/fregat_project/application/controllers/Registry.php -n 131
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="16" id="110080004" resolved="unresolved"></response>
+
+[11008] <- stack_get -i 17
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="17"><stack where="{main}" level="0" type="file" filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></stack></response>
+
+[11008] <- run -i 18
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Q29udGVudC10eXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTg=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Tm8gZGlyZWN0IHNjcmlwdCBhY2Nlc3MgYWxsb3dlZA==]]></stream>
+
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="18" status="stopping" reason="ok"></response>
+
+[11008] <- run -i 19
+[11008] Log closed at 2021-10-16 19:11:51
+
+[11008] Log opened at 2021-10-16 19:32:49
+[11008] I: Connecting to configured address/port: localhost:9000.
+[11008] I: Connected to client. :-)
+[11008] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" language="PHP" xdebug:language_version="7.1.33" protocol_version="1.0" appid="11008" idekey="coldy"><engine version="2.9.4"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[11008] <- feature_set -i 1 -n show_hidden -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[11008] <- feature_set -i 2 -n max_depth -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[11008] <- feature_set -i 3 -n max_children -v 100
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[11008] <- feature_set -i 4 -n extended_properties -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[11008] <- feature_set -i 5 -n notify_ok -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[11008] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[11008] <- stdout -i 7 -c 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[11008] <- status -i 8
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[11008] <- step_into -i 9
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></xdebug:message></response>
+
+[11008] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[11008] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[11008] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="17" encoding="base64"><![CDATA[UGhwU3Rvcm0gMjAyMS4yLjI=]]></property></response>
+
+[11008] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="5" encoding="base64"><![CDATA[NjMzNDI=]]></property></response>
+
+[11008] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="85" encoding="base64"><![CDATA[L2ZyZWdhdF9wcm9qZWN0L2FwcGxpY2F0aW9uL21vZGVscy9SZWdpc3RyeV9tb2RlbC5waHA/X2lqdD0yZmVjZ21ncDNoOHVldGF2MDd1dWgwZHB1aw==]]></property></response>
+
+[11008] <- stack_get -i 15
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="15"><stack where="{main}" level="0" type="file" filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></stack></response>
+
+[11008] <- run -i 16
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Q29udGVudC10eXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTg=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Tm8gZGlyZWN0IHNjcmlwdCBhY2Nlc3MgYWxsb3dlZA==]]></stream>
+
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="16" status="stopping" reason="ok"></response>
+
+[11008] <- run -i 17
+[11008] Log closed at 2021-10-16 19:32:50
+
+[11008] Log opened at 2021-10-16 19:44:20
+[11008] I: Connecting to configured address/port: localhost:9000.
+[11008] I: Connected to client. :-)
+[11008] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" language="PHP" xdebug:language_version="7.1.33" protocol_version="1.0" appid="11008" idekey="coldy"><engine version="2.9.4"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[11008] <- feature_set -i 1 -n show_hidden -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[11008] <- feature_set -i 2 -n max_depth -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[11008] <- feature_set -i 3 -n max_children -v 100
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[11008] <- feature_set -i 4 -n extended_properties -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[11008] <- feature_set -i 5 -n notify_ok -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[11008] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[11008] <- stdout -i 7 -c 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[11008] <- status -i 8
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[11008] <- step_into -i 9
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></xdebug:message></response>
+
+[11008] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[11008] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[11008] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="17" encoding="base64"><![CDATA[UGhwU3Rvcm0gMjAyMS4yLjI=]]></property></response>
+
+[11008] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="5" encoding="base64"><![CDATA[NjMzNDI=]]></property></response>
+
+[11008] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="85" encoding="base64"><![CDATA[L2ZyZWdhdF9wcm9qZWN0L2FwcGxpY2F0aW9uL21vZGVscy9SZWdpc3RyeV9tb2RlbC5waHA/X2lqdD0yZmVjZ21ncDNoOHVldGF2MDd1dWgwZHB1aw==]]></property></response>
+
+[11008] <- stack_get -i 15
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="15"><stack where="{main}" level="0" type="file" filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></stack></response>
+
+[11008] <- run -i 16
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Q29udGVudC10eXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTg=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Tm8gZGlyZWN0IHNjcmlwdCBhY2Nlc3MgYWxsb3dlZA==]]></stream>
+
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="16" status="stopping" reason="ok"></response>
+
+[11008] Log closed at 2021-10-16 19:44:20
+
+[11008] Log opened at 2021-10-16 19:44:59
+[11008] I: Connecting to configured address/port: localhost:9000.
+[11008] I: Connected to client. :-)
+[11008] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" language="PHP" xdebug:language_version="7.1.33" protocol_version="1.0" appid="11008" idekey="coldy"><engine version="2.9.4"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[11008] <- feature_set -i 1 -n show_hidden -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[11008] <- feature_set -i 2 -n max_depth -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[11008] <- feature_set -i 3 -n max_children -v 100
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[11008] <- feature_set -i 4 -n extended_properties -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[11008] <- feature_set -i 5 -n notify_ok -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[11008] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[11008] <- stdout -i 7 -c 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[11008] <- status -i 8
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[11008] <- step_into -i 9
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></xdebug:message></response>
+
+[11008] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[11008] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[11008] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="17" encoding="base64"><![CDATA[UGhwU3Rvcm0gMjAyMS4yLjI=]]></property></response>
+
+[11008] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="5" encoding="base64"><![CDATA[NjMzNDI=]]></property></response>
+
+[11008] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="85" encoding="base64"><![CDATA[L2ZyZWdhdF9wcm9qZWN0L2FwcGxpY2F0aW9uL21vZGVscy9SZWdpc3RyeV9tb2RlbC5waHA/X2lqdD0yZmVjZ21ncDNoOHVldGF2MDd1dWgwZHB1aw==]]></property></response>
+
+[11008] <- stack_get -i 15
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="15"><stack where="{main}" level="0" type="file" filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></stack></response>
+
+[11008] <- run -i 16
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Q29udGVudC10eXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTg=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Tm8gZGlyZWN0IHNjcmlwdCBhY2Nlc3MgYWxsb3dlZA==]]></stream>
+
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="16" status="stopping" reason="ok"></response>
+
+[11008] Log closed at 2021-10-16 19:44:59
+
+[11008] Log opened at 2021-10-17 13:59:16
+[11008] I: Connecting to configured address/port: localhost:9000.
+[11008] I: Connected to client. :-)
+[11008] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" language="PHP" xdebug:language_version="7.1.33" protocol_version="1.0" appid="11008" idekey="coldy"><engine version="2.9.4"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[11008] <- feature_set -i 1 -n show_hidden -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[11008] <- feature_set -i 2 -n max_depth -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[11008] <- feature_set -i 3 -n max_children -v 100
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[11008] <- feature_set -i 4 -n extended_properties -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[11008] <- feature_set -i 5 -n notify_ok -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[11008] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[11008] <- stdout -i 7 -c 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[11008] <- status -i 8
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[11008] <- step_into -i 9
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></xdebug:message></response>
+
+[11008] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[11008] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[11008] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="17" encoding="base64"><![CDATA[UGhwU3Rvcm0gMjAyMS4yLjI=]]></property></response>
+
+[11008] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="5" encoding="base64"><![CDATA[NjMzNDI=]]></property></response>
+
+[11008] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="85" encoding="base64"><![CDATA[L2ZyZWdhdF9wcm9qZWN0L2FwcGxpY2F0aW9uL21vZGVscy9SZWdpc3RyeV9tb2RlbC5waHA/X2lqdD1rOTZkbjZvOTF1N202OWZrczgzZ2dkaG4zZw==]]></property></response>
+
+[11008] <- breakpoint_set -i 15 -t line -f file://C:/OpenServer/domains/fregat_project/application/controllers/Registry.php -n 215
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="15" id="110080005" resolved="unresolved"></response>
+
+[11008] <- breakpoint_set -i 16 -t line -f file://C:/OpenServer/domains/fregat_project/application/controllers/Registry.php -n 213
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="16" id="110080006" resolved="unresolved"></response>
+
+[11008] <- breakpoint_set -i 17 -t line -f file://C:/OpenServer/domains/fregat_project/application/controllers/Registry.php -n 216
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="17" id="110080007" resolved="unresolved"></response>
+
+[11008] <- breakpoint_set -i 18 -t line -f file://C:/OpenServer/domains/fregat_project/application/controllers/Registry.php -n 212
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="18" id="110080008" resolved="unresolved"></response>
+
+[11008] <- stack_get -i 19
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="19"><stack where="{main}" level="0" type="file" filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></stack></response>
+
+[11008] <- run -i 20
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Q29udGVudC10eXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTg=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Tm8gZGlyZWN0IHNjcmlwdCBhY2Nlc3MgYWxsb3dlZA==]]></stream>
+
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="20" status="stopping" reason="ok"></response>
+
+[11008] <- run -i 21
+[11008] Log closed at 2021-10-17 13:59:16
+
+[11008] Log opened at 2021-10-17 23:04:46
+[11008] I: Connecting to configured address/port: localhost:9000.
+[11008] I: Connected to client. :-)
+[11008] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" language="PHP" xdebug:language_version="7.1.33" protocol_version="1.0" appid="11008" idekey="coldy"><engine version="2.9.4"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[11008] <- feature_set -i 1 -n show_hidden -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="1" feature="show_hidden" success="1"></response>
+
+[11008] <- feature_set -i 2 -n max_depth -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="max_depth" success="1"></response>
+
+[11008] <- feature_set -i 3 -n max_children -v 100
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_children" success="1"></response>
+
+[11008] <- feature_set -i 4 -n extended_properties -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="extended_properties" success="1"></response>
+
+[11008] <- feature_set -i 5 -n notify_ok -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="notify_ok" success="1"></response>
+
+[11008] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[11008] <- stdout -i 7 -c 1
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="7" success="1"></response>
+
+[11008] <- status -i 8
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="8" status="starting" reason="ok"></response>
+
+[11008] <- step_into -i 9
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></xdebug:message></response>
+
+[11008] <- eval -i 10 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="10"><property type="bool"><![CDATA[0]]></property></response>
+
+[11008] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[1]]></property></response>
+
+[11008] <- eval -i 12 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="string" size="17" encoding="base64"><![CDATA[UGhwU3Rvcm0gMjAyMS4yLjI=]]></property></response>
+
+[11008] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="5" encoding="base64"><![CDATA[NjMzNDI=]]></property></response>
+
+[11008] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="85" encoding="base64"><![CDATA[L2ZyZWdhdF9wcm9qZWN0L2FwcGxpY2F0aW9uL21vZGVscy9SZWdpc3RyeV9tb2RlbC5waHA/X2lqdD0xdDdobGMwdWFmaWNkMDgzamExZmhiYTRiaA==]]></property></response>
+
+[11008] <- stack_get -i 15
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="15"><stack where="{main}" level="0" type="file" filename="file:///C:/OpenServer/domains/fregat_project/application/models/Registry_model.php" lineno="2"></stack></response>
+
+[11008] <- run -i 16
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Q29udGVudC10eXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTg=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[11008] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Tm8gZGlyZWN0IHNjcmlwdCBhY2Nlc3MgYWxsb3dlZA==]]></stream>
+
+[11008] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="16" status="stopping" reason="ok"></response>
+
+[11008] <- run -i 17
+[11008] Log closed at 2021-10-17 23:04:46
+
